@@ -1,0 +1,30 @@
+{
+	"name": "Ditaa",
+	"author": "CoffMan",
+	"url": "https://www.mediawiki.org/wiki/Extension:Ditaa",
+	"descriptionmsg": "Render nice diagrams from ASCII",
+	"license-name": "GPL-2.0",
+	"type": "parserhook",
+	"version": "1.1",
+	"ConfigRegistry": {
+	},
+	"ExtensionFunctions": [
+		"Ditaa::initialize"
+	],
+	"AutoloadClasses": {
+        "Ditaa": "Ditaa.php"
+	},
+	"ResourceModules": {
+	},
+	"ResourceFileModulePaths": {
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"Ditaa::onParserFirstCallInit"
+		]
+	},
+	"config": {
+		"DitaaCommand": "/usr/local/bin/wiki_ditaa.sh"
+	},
+	"manifest_version": 1
+}
