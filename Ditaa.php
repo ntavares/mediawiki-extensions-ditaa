@@ -90,7 +90,7 @@ class Ditaa {
             wfDebug( 'Ditaa::render: finished' );
             if ( $retval ) {
                 // Message not localized, only relevant during install
-                return "<div id=\"toc\"><tt>Ditaa error: Return code: " . $retval ." . Command line was: {$cmdline}</tt><p />Ouput: <pre>$output</pre></div>";
+                return "<div class=\"errorbox\"><tt>Ditaa error: Return code: " . $retval ." . Command line was: {$cmdline}</tt><p />Ouput: <pre>$output</pre></div>";
             }
         }
 
